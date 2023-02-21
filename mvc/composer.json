@@ -1,0 +1,15 @@
+{
+    "name": "test/mvc",
+    "autoload": {
+        "psr-4": {
+            "Test\\Mvc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Christian",
+            "email": "nihilist.cc@gmail.com"
+        }
+    ],
+    "require": {}
+}
