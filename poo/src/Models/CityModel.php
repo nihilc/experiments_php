@@ -14,13 +14,13 @@ class CityModel extends Model
         parent::__construct();
     }
     # Create
-    public function create(City $entity)
+    public function create(City $city)
     {
         try {
             $sql = "INSERT INTO Cities (name) VALUES (?)";
             $stm = $this->db->connect()->prepare($sql);
             $stm->execute([
-                $entity->getName()
+                $city->getName()
             ]);
             return true;
         } catch (PDOException $e) {
@@ -29,14 +29,14 @@ class CityModel extends Model
         }
     }
     # Update
-    public function update(City $entity)
+    public function update(City $city)
     {
         try {
             $sql = "UPDATE Cities SET name = ? WHERE id = ?";
             $stm = $this->db->connect()->prepare($sql);
             $stm->execute([
-                $entity->getName(),
-                $entity->getId()
+                $city->getName(),
+                $city->getId()
             ]);
             return;
         } catch (PDOException $e) {
@@ -60,7 +60,7 @@ class CityModel extends Model
         }
     }
     # Read
-    public function readAll()
+    public function read()
     {
         try {
             // Getting Cities from database
@@ -71,15 +71,14 @@ class CityModel extends Model
 
             // Creating array of City Entities
             foreach ($rows as $row) {
-                $entity = new City;
-                $entity->setAll([
-                    $row->id,
-                    $row->name
-                ]);
-                $data[] = $entity;
+                $city = new City;
+                $city->setId($row->id);
+                $city->setName($row->name);
+
+                $cities[] = $city;
             }
 
-            return $data;
+            return $cities;
         } catch (PDOException $e) {
             print_r("<pre>$e</pre>");
             return false;
@@ -96,10 +95,8 @@ class CityModel extends Model
 
             // Creating City Entity
             $entity = new City;
-            $entity->setAll([
-                $row->id,
-                $row->name
-            ]);
+            $entity->setId($row->id);
+            $entity->setName($row->name);
 
             return $entity;
         } catch (PDOException $e) {

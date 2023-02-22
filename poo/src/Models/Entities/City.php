@@ -17,7 +17,7 @@ class City
     {
         $this->id = $value;
     }
-    public function setName(int $value)
+    public function setName(string $value)
     {
         $this->name = $value;
     }
