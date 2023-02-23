@@ -69,7 +69,8 @@ class CompanyModel extends Model
             // Getting Companies from database
             $sql = "SELECT co.*, ci.name AS city_name 
                 FROM Companies co
-                JOIN Cities ci ON co.city_id = ci.id";
+                JOIN Cities ci ON co.city_id = ci.id
+                ORDER BY co.id";
             $stm = $this->db->connect()->prepare($sql);
             $stm->execute([]);
             $rows = $stm->fetchAll(PDO::FETCH_OBJ);

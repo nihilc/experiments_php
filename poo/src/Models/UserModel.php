@@ -76,7 +76,8 @@ class UserModel extends Model
             FROM Users u
             JOIN Cities ci ON u.city_id = ci.id
             JOIN Companies co ON u.company_id = co.id
-            JOIN Cities co_ci ON co.city_id = co_ci.id";
+            JOIN Cities co_ci ON co.city_id = co_ci.id
+            ORDER BY u.id";
             $stm = $this->db->connect()->prepare($sql);
             $stm->execute([]);
             $rows = $stm->fetchAll(PDO::FETCH_OBJ);
