@@ -1,0 +1,56 @@
+[04-Apr-2023 21:28:04 Europe/Berlin] Hello, errors!
+[04-Apr-2023 21:28:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Bramus\Router\Router" not found in C:\xampp\htdocs\sessions\src\Routes\web.php:6
+Stack trace:
+#0 C:\xampp\htdocs\sessions\public\index.php(13): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\sessions\src\Routes\web.php on line 6
+[04-Apr-2023 21:29:10 Europe/Berlin] Hello, errors!
+[04-Apr-2023 21:29:14 Europe/Berlin] Hello, errors!
+[04-Apr-2023 21:29:19 Europe/Berlin] Hello, errors!
+[04-Apr-2023 21:29:41 Europe/Berlin] Hello, errors!
+[04-Apr-2023 21:29:51 Europe/Berlin] Hello, errors!
+[04-Apr-2023 21:30:16 Europe/Berlin] Hello, errors!
+[04-Apr-2023 21:30:18 Europe/Berlin] Hello, errors!
+[04-Apr-2023 21:30:23 Europe/Berlin] Hello, errors!
+[04-Apr-2023 21:30:34 Europe/Berlin] Hello, errors!
+[04-Apr-2023 22:06:29 Europe/Berlin] Hello, errors!
+[04-Apr-2023 22:06:42 Europe/Berlin] Hello, errors!
+[04-Apr-2023 22:07:12 Europe/Berlin] Hello, errors!
+[04-Apr-2023 22:07:16 Europe/Berlin] Hello, errors!
+[04-Apr-2023 22:07:27 Europe/Berlin] Hello, errors!
+[04-Apr-2023 22:07:42 Europe/Berlin] Hello, errors!
+[04-Apr-2023 22:07:43 Europe/Berlin] Hello, errors!
+[04-Apr-2023 23:22:50 Europe/Berlin] Hello, errors!
+[04-Apr-2023 23:22:52 Europe/Berlin] Hello, errors!
+[05-Apr-2023 15:17:05 Europe/Berlin] Hello, errors!
+[05-Apr-2023 15:17:24 Europe/Berlin] Hello, errors!
+[05-Apr-2023 15:17:25 Europe/Berlin] Hello, errors!
+[05-Apr-2023 15:17:27 Europe/Berlin] Hello, errors!
+[05-Apr-2023 15:17:28 Europe/Berlin] Hello, errors!
+[05-Apr-2023 15:17:29 Europe/Berlin] Hello, errors!
+[05-Apr-2023 15:17:29 Europe/Berlin] Hello, errors!
+[05-Apr-2023 15:17:31 Europe/Berlin] Hello, errors!
+[12-Apr-2023 00:22:22 Europe/Berlin] Hello, errors!
+[12-Apr-2023 00:22:27 Europe/Berlin] Hello, errors!
+[12-Apr-2023 15:34:52 Europe/Berlin] Hello, errors!
+[12-Apr-2023 22:10:48 Europe/Berlin] Hello, errors!
+[13-Apr-2023 15:15:21 Europe/Berlin] Hello, errors!
+[08-May-2023 19:42:37 Europe/Berlin] Hello, errors!
+[08-May-2023 19:43:05 Europe/Berlin] Hello, errors!
+[08-May-2023 19:43:05 Europe/Berlin] PHP Warning:  Class __PHP_Incomplete_Class has no unserializer in C:\xampp\htdocs\test\examples-php\session-poo\src\Routes\web.php on line 24
+[08-May-2023 19:43:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: The script tried to call a method on an incomplete object. Please ensure that the class definition "Test\Login\Models\Entities\User" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition in C:\xampp\htdocs\test\examples-php\session-poo\src\Routes\web.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 C:\xampp\htdocs\test\examples-php\session-poo\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#2 C:\xampp\htdocs\test\examples-php\session-poo\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\test\examples-php\session-poo\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#4 C:\xampp\htdocs\test\examples-php\session-poo\src\Routes\web.php(42): Bramus\Router\Router->run()
+#5 C:\xampp\htdocs\test\examples-php\session-poo\public\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\test\examples-php\session-poo\src\Routes\web.php on line 25
+[08-May-2023 19:43:09 Europe/Berlin] Hello, errors!
+[08-May-2023 19:43:18 Europe/Berlin] Hello, errors!
+[08-May-2023 19:52:44 Europe/Berlin] Hello, errors!
+[08-May-2023 19:52:49 Europe/Berlin] Hello, errors!
+[08-May-2023 19:52:55 Europe/Berlin] Hello, errors!
+[08-May-2023 19:53:02 Europe/Berlin] Hello, errors!
