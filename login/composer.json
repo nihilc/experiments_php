@@ -1,0 +1,17 @@
+{
+    "name": "test/login",
+    "require": {
+        "bramus/router": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Test\\Login\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Christian",
+            "email": "nihilist.cc@gmail.com"
+        }
+    ]
+}
