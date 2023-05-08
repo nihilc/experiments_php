@@ -1,0 +1,14 @@
+DROP SCHEMA IF EXISTS 'test';
+
+CREATE SCHEMA IF NOT EXISTS `test` DEFAULT CHARACTER SET utf8 ;
+USE `test` ;
+
+CREATE TABLE IF NOT EXISTS 'test'.'User' (
+  'id' INT AUTOINCREMENT,
+  'fname' VARCHAR(50),
+  'lname' VARCHAR(50),
+  'user' VARCHAR(50),
+  'pass' VARCHAR(50),
+  PRIMAry KEY('id')
+)
+ENGINE = InnoDB;

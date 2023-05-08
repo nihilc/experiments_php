@@ -1,0 +1,19 @@
+{
+    "name": "nihilc/test",
+    "description": "Test php mvc poo with bramus router",
+    "type": "project",
+    "require": {
+        "bramus/router": "1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nihilc\\Test\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Christian Cardenas",
+            "email": "nihilist.cc@gmail.com"
+        }
+    ]
+}
